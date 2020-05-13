@@ -53,7 +53,7 @@ module.exports = (app) => {
 
     routeId.get((req, res) => {
 
-        db.findOne({_id:request.params.id}).exec((err, user) =>{
+        db.findOne({_id:req.params.id}).exec((err, user)=>{
 
             if (err) {
 
